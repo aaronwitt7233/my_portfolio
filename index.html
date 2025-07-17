@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aaron Witt - Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            background: #000;
+            color: #39ff14;
+        }
+        header {
+            background: #000;
+            color: #39ff14;
+            padding: 30px 0 20px 0;
+            box-shadow: none;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 30px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            color: #39ff14;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #39ff14;
+            text-shadow: 0 0 8px #39ff14;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .hero {
+            background: #000;
+            color: #39ff14;
+            padding: 70px 20px 60px 20px;
+            text-align: center;
+            border-radius: 16px;
+            margin: 30px auto 0 auto;
+            box-shadow: none;
+            max-width: 900px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #39ff14;
+            text-shadow: 0 0 8px #39ff14, 0 0 2px #000;
+        }
+        .section {
+            background: #000;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: none;
+            margin: 30px auto;
+            max-width: 900px;
+            color: #39ff14;
+        }
+        .section h2 {
+            color: #39ff14;
+            margin-bottom: 18px;
+            text-shadow: 0 0 6px #39ff14;
+        }
+        /* Removed skills-list and skill styles */
+        @media (max-width: 600px) {
+            .container, .hero, .section {
+                max-width: 98vw;
+                padding: 20px 5vw;
+            }
+            .skills-list {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="font-size:2.2rem; font-weight:700; letter-spacing:2px; margin:0;">Aaron Witt</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <h2>Welcome to My Portfolio!</h2>
+        <p style="font-size:1.2rem; max-width:600px; margin:auto;">
+            Data-driven problem solver with a proven track record in technology, analytics, and team leadership. I leverage Python, SQL, and business intelligence to deliver actionable insights and drive operational excellence.
+        </p>
+    </section>
+
+    <section class="section" id="about-me-full">
+        <h2 style="margin-bottom:24px;">About Me</h2>
+        <p style="margin-bottom:36px;">
+            My name is Aaron Witt, a technology professional with hands-on experience in data analytics, process improvement, and team management. I am currently pursuing a Bachelor's in Software Engineering at SNHU and enrolled in the TripleTen Data Science program to further advance my skills in data analysis, machine learning, and business intelligence. My career spans pharmacy, warehouse, customer service, and IT roles, where I consistently improved performance, solved complex problems, and delivered exceptional results. I thrive in fast-paced environments, adapt quickly to new challenges, and am passionate about leveraging technology to drive business success.
+        </p>
+        <h2 style="margin-bottom:24px;">Professional Experience</h2>
+        <ul style="margin-bottom:36px;">
+            <li><b>Pharmacy Technician – Walgreens (08/2020–01/2024)</b>
+                <ul>
+                    <li>Improved store performance and profitability by analyzing operational metrics and implementing process enhancements.</li>
+                    <li>Automated data parsing and reporting by importing 5 years of metrics from .txt files into SQL using Python, enabling actionable business insights.</li>
+                    <li>Resolved complex insurance claim issues, ensuring timely adjudication and compliance with HIPAA guidelines.</li>
+                    <li>Delivered exceptional customer service and problem-solving in a high-volume environment.</li>
+                </ul>
+            </li>
+            <li><b>Warehouse Manager – Amazon (10/2017–08/2020)</b>
+                <ul>
+                    <li>Optimized warehouse throughput by monitoring performance metrics and reducing idle time.</li>
+                    <li>Led and developed teams to consistently exceed productivity targets and improve operational efficiency.</li>
+                    <li>Implemented workflow improvements and provided training to staff on best practices.</li>
+                    <li>Communicated results and recommendations to senior leadership, including end-of-shift reporting.</li>
+                </ul>
+            </li>
+            <li><b>Customer Service Manager – Walmart (10/2015–08/2016)</b>
+                <ul>
+                    <li>Managed daily cash operations and ensured accuracy in store financials.</li>
+                    <li>Resolved customer issues and maintained high standards for front-end operations.</li>
+                    <li>Trained and supervised staff to deliver excellent customer experiences.</li>
+                </ul>
+            </li>
+            <li><b>Technology Specialist – Office Depot (08/2013–06/2014)</b>
+                <ul>
+                    <li>Diagnosed and repaired hardware/software issues, performed data recovery, and implemented security solutions for clients.</li>
+                    <li>Managed technology services, inventory, and workflow to support business operations.</li>
+                    <li>Provided technical support and training to customers and staff.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2 style="margin-bottom:24px;">Technical Skills</h2>
+        <p style="margin-bottom:36px;">
+            Python, SQL, HTML, CSS, Data Analysis, Business Intelligence, Process Improvement, Customer Service, Team Leadership, Computer Diagnostics & Repair
+        </p>
+        <h2 style="margin-bottom:24px;">Education</h2>
+        <p style="margin-bottom:12px;">
+            B.S. in Software Engineering (in progress), Southern New Hampshire University<br>
+            Data Science Program (in progress), TripleTen<br>
+            High School Diploma, Crystal Lake South High School, Crystal Lake, IL (2015)
+        </p>
+    </section>
+</body>
+</html>
